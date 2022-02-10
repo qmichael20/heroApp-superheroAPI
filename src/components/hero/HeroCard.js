@@ -22,7 +22,8 @@ export const HeroCard = ({ id, image, name }) => {
               alt="Not Found"
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null; // prevents looping
-                currentTarget.src = "/assets/NotFound.jpg";
+                currentTarget.src =
+                  "https://m.media-amazon.com/images/I/61FQCSP7ZIL._SS500_.jpg";
               }}
               onClick={() => handleClick(id)}
             />
